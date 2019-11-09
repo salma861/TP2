@@ -1,0 +1,9 @@
+<h1>{{titre}} </h1>
+<p>donner un premier nombre</p>
+<input type="text" (keyup)=onKeyUp($event)  #nb1> 
+<p>le carre est {{carre}}</p>
+<p>donner un deuxieme nombre </p>
+<input type="texte"(keyup)="0" #nb2> 
+<button (click)="onSomme(nb1.value,nb2.value)" [disabled]="nb1.value==''||nb2.value==''"> somme </button>
+<p> la somme est {{somme}} </p>
+ 

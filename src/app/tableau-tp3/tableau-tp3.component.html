@@ -1,0 +1,20 @@
+<h1>{{titre}}</h1>
+<ul>
+<li *ngFor ="let t of tab ; let indice=index"> {{t}} <button (click)=onPosition(indice)> position</button>  </li>
+<!--<li>{{tab[1]}} </li>
+<li>{{tab[2]}} </li>
+<li>{{tab[3]}} </li>
+<li>{{tab[4]}} </li>
+<li>{{tab[5]}} </li>
+<li>{{tab[6]}} </li>-->
+</ul>
+<h1>{{titre2}}</h1>
+<ul>
+    <li *ngFor ="let t of tab ; let indice=index"> {{t}} <button *ngIf="t%2==0"  (click)=onPosition(indice) > position</button>  </li>
+</ul>
+<h2>Affichage des éléments pairs du tableau</h2>
+<ul>
+<ng-container *ngFor="let t of tab">
+<li *ngIf="t%2==0"> {{t}}</li>
+</ng-container>
+</ul>

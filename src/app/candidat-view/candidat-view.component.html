@@ -1,0 +1,21 @@
+
+<h1>{{titre}}</h1>
+<img [src]="tabCandidats[0].image"> NOM:{{tabCandidats[0].nom}} <input type="checkbox" value="indepandant"[checked]="!tabCandidats[0].parti" disabled> indepandant 
+
+Nb Followres :{{tabCandidats[0].nb}}
+<button (click)="onFollow(0)">Follow </button>
+<br/>
+<img [src]="tabCandidats[1].image"> NOM:{{tabCandidats[1].nom}} <input type="checkbox" value="indepandant" [checked]="!tabCandidats[1].parti" disabled> indepandant 
+
+Nb Followres :{{tabCandidats[1].nb}}
+<button (click)="onFollow(1)">Follow </button>
+<br/>
+<img [src]="tabCandidats[2].image"> NOM:{{tabCandidats[2].nom}} <input type="checkbox" value="indepandant" [checked]="!tabCandidats[2].parti" disabled> indepandant 
+
+Nb Followres :{{tabCandidats[2].nb}}
+<button (click)="onFollow(2)">Follow </button>
+
+
+
+
+
